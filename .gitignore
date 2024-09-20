@@ -1,0 +1,7 @@
+modelsim/modelsim_lib/*
+modelsim/compile.log
+vivado/prj/*
+apps/*/*.txt.user
+*.log
+#lab2/Simulators/verilatorSIM_ViDBo/libwebsockets/*
+#*.zip

@@ -1,0 +1,2 @@
+MM_Ultra_tb_behav.wcfg
+-是vivado的仿真器xsim的波形文件
