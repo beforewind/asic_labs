@@ -7,5 +7,6 @@ apps/*/*.txt.user
 *.vh
 *.dis
 *.bin
-#lab2/Simulators/verilatorSIM_ViDBo/libwebsockets/*
+.vscode*
+*/libwebsockets*
 #*.zip
