@@ -3,5 +3,9 @@ modelsim/compile.log
 vivado/prj/*
 apps/*/*.txt.user
 *.log
+*build
+*.vh
+*.dis
+*.bin
 #lab2/Simulators/verilatorSIM_ViDBo/libwebsockets/*
 #*.zip
