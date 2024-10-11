@@ -1,5 +1,10 @@
-modelsim/modelsim_lib/*
-modelsim/compile.log
+*/modelsim/modelsim_lib/*
+*/modelsim/compile.log
+*/modelsim/modelsim.ini
+*/modelsim/transcript
+*/modelsim/vsim.wlf
+*/modelsim/vsim.dbg
+*/modelsim/vish_stacktrace.vstf
 vivado/prj/*
 apps/*/*.txt.user
 *.log
@@ -10,3 +15,10 @@ apps/*/*.txt.user
 .vscode*
 */libwebsockets*
 #*.zip
+lab1/modelsim/modelsim_lib/msim/_info
+lab2/Labs/*
+lab2/vivado/rvfpganexys/*
+#lab2/vivado/rvfpganexys.bit
+lab3/*
+tutorials/lab3_建模与仿真.pptx
+tutorials/lab4_IP设计与验证.pptx

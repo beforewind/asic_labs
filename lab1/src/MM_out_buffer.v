@@ -91,7 +91,7 @@ assign out_data_last = (out_data_cnt == out_F_block_size-1) & out_data_ready;
 genvar i;
 generate
     for(i=0; i<OUT_Feature_Block_num; i=i+1 )begin
-        initial begin F_array[i]<=0;end
+        initial begin F_array[i]=0;end
     end
 endgenerate
 

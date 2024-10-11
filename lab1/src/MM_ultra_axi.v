@@ -396,11 +396,11 @@ always @(*)
 begin
       // Address decoding for reading registers
       case ( axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] )
-        2'h0   : reg_data_out <= slv_reg0;
-        2'h1   : reg_data_out <= slv_reg1;
-        2'h2   : reg_data_out <= slv_reg2;
-        2'h3   : reg_data_out <= slv_reg3;
-        default : reg_data_out <= 0;
+        2'h0   : reg_data_out = slv_reg0;
+        2'h1   : reg_data_out = slv_reg1;
+        2'h2   : reg_data_out = slv_reg2;
+        2'h3   : reg_data_out = slv_reg3;
+        default : reg_data_out = 0;
       endcase
 end
 
@@ -426,17 +426,17 @@ end
 // Add user logic here
 MM_ultra
 #(
-    .A_size(array_size),                                                   //决定了SA的边长，即大小
-    .data_width(data_width),                                           //决定了量化的数据位宽
-    .shift_width(shift_width),                                         //决定了移位器移位变量的位宽
-    .Weight_Block_num(Weight_block_num),                               //决定了IN_BUFFER里面weight_buffer_block的数量 一个block包含A_size个数据,数据位宽 data_width
-    .IN_Feature_Block_num(in_feature_Block_num),                       //决定了IN_BUFFER里面feature_buffer_block的数量 一个block包含A_size个数据,数据位宽 data_width
-    .OUT_Feature_Block_num(out_feature_block_num),                     //决定了OUT_BUFFER里面feature_buffer_block的数量 一个block包含A_size个数据,数据位宽OUT_MEM_WIDTH
-    .OUT_MEM_WIDTH(out_mem_width),                                     //决定了OUT_BUFFER的数据位宽
-    .F_length_width(feature_length_width),                                   //决定了F_length寄存器位宽以及MM_buffer里面bram大小
-    .F_width_block_num_width(feature_width_block_num_width),                 //决定了F_width_block_num寄存器位宽
-    .W_width_block_num_width(weight_width_block_num_width)                  //决定了W_width_block_num寄存器位宽以及MM_buffer里面bram大小
-                                                                        //F_length和W_width_block_num会有相乘，注意时序
+    .A_size(array_size),                                      //  决定了SA的边长，即大小
+    .data_width(data_width),                                  //  决定了量化的数据位宽
+    .shift_width(shift_width),                                //  决定了移位器移位变量的位宽
+    .Weight_Block_num(Weight_block_num),                      //  决定了IN_BUFFER里面weight_buffer_block的数量 一个block包含A_size个数据,数据位宽 data_width
+    .IN_Feature_Block_num(in_feature_Block_num),              //  决定了IN_BUFFER里面feature_buffer_block的数量 一个block包含A_size个数据,数据位宽 data_width
+    .OUT_Feature_Block_num(out_feature_block_num),            //  决定了OUT_BUFFER里面feature_buffer_block的数量 一个block包含A_size个数据,数据位宽OUT_MEM_WIDTH
+    .OUT_MEM_WIDTH(out_mem_width),                            //  决定了OUT_BUFFER的数据位宽
+    .F_length_width(feature_length_width),                    //  决定了F_length寄存器位宽以及MM_buffer里面bram大小
+    .F_width_block_num_width(feature_width_block_num_width),  //  决定了F_width_block_num寄存器位宽
+    .W_width_block_num_width(weight_width_block_num_width)    //  决定了W_width_block_num寄存器位宽以及MM_buffer里面bram大小
+                                                              //  F_length和W_width_block_num会有相乘，注意时序
 )u_MM_ultra(
     .clk(axis_aclk),
     .rst_n(aresetn),

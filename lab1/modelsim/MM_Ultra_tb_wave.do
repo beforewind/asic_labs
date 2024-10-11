@@ -7,4 +7,9 @@
 #
 ######################################################################
 if { [catch {[add wave *]}] } {}
+add wave /MM_Ultra_tb/u_MM_ultra/*
+# add wave -r -radix hex /MM_Ultra_tb/u_MM_ultra/*
+add wave /MM_Ultra_tb/u_MM_ultra/u_MM_buffer/*
 add wave /glbl/GSR
+
+
