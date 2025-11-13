@@ -18,7 +18,3 @@ apps/*/*.txt.user
 lab1/modelsim/modelsim_lib/msim/_info
 lab2/Labs/*
 lab2/vivado/rvfpganexys/*
-#lab2/vivado/rvfpganexys.bit
-lab3/*
-tutorials/lab3_建模与仿真.pptx
-tutorials/lab4_IP设计与验证.pptx
