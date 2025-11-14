@@ -3,7 +3,7 @@
 module MM_ultra_top #
 	(
 		// Users to add parameters here
-        parameter integer     array_size=24,                                      
+        parameter integer     array_size=12,                                      
         parameter integer     data_width=8,                                       
         parameter integer     shift_width=5,                                      
         parameter integer     Weight_block_num=2000,                              

@@ -1,5 +1,9 @@
 
 
+参考：https://hardwareteams.com/docs/fpga-asic/cocotb/
+
+[FIR filter design and verification with python and cocotb | HardwareTeams.com](https://hardwareteams.com/docs/fpga-asic/cocotb/fir-filter/)
+
 
 ## 方法1：python ./test_fir.py
 

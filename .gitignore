@@ -18,3 +18,4 @@ apps/*/*.txt.user
 lab1/modelsim/modelsim_lib/msim/_info
 lab2/Labs/*
 lab2/vivado/rvfpganexys/*
+lab1/vivado/mmu
